@@ -1,0 +1,32 @@
+{
+  "name": "typescript-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "build:watch": "npx tsc -w",
+    "start": "nodemon ./build/src/Main.js",
+    "start:watch": "npx nodemon -L -r ./tsconfig-paths-bootstrap.js ./build/src/Main.js",
+    "dev:watch": "npx nodemon -L -r ./src/Main.ts",
+    "js": "npx nodemon ./src/Main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "^4.8.5",
+    "class-transformer": "^0.5.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typeorm": "^0.3.9",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/bull": "^3.15.9"
+  }
+}
